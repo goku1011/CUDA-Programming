@@ -79,7 +79,7 @@ int main(){
   long fastest = 2^31 - 1;
 
   // Run the algo 32 times, with number of threads as multiples of 32
-  for(int q=32; q<=1024; q+32){
+  for(int q=32; q<=1024; q+=32){
     long startTime = clock();
     FindClosestGPU <<< (count/q + 1), q >>> (h_points, h_indices count);
     long finishTime = clock();
