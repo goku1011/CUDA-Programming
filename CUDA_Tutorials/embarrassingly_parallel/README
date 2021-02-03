@@ -1,0 +1,9 @@
+Find the closest point to each point in a set of given points.
+
+Fastest CPU run takes 186 milliseconds.
+Fastest GPU run takes 26 milliseconds.
+
+Ways to improve GPU time-
+1) Loop through the second parameter (number of threads per block) in the launch coniguration as multiples of 32 and get the optimized value for faster GPU performance.
+2) When comparing CPU vs GPU, ensure Target Machine Platform is the same, i.e., either 32-bit or 64-bit
+3) Set appropriate 'compute' and 'sm' settings of the GPU
