@@ -1,4 +1,4 @@
-Find the closest point to each point in a set of given points.
+Find the closest point to each point in a set of 10000 given points.
 
 Fastest CPU run takes 186 milliseconds.
 Fastest GPU run takes 26 milliseconds.
