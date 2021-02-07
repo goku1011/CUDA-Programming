@@ -51,15 +51,6 @@ int main(int argc, char **argv){
   cudaDeviceSynchronize();
   checkCudaErrors( cudaGetLastError());
 
-  int err = timer.Elapsed();
-
-  if(err < 0){
-    std::cerr << "Could not print timing information" << '\n';
-    exit(1);
-  }else{
-    cout << "msecs : "<< err << endl;
-  }
-
   postProcess(output_file);
   return 0;
 }
