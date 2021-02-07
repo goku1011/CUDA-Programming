@@ -1,5 +1,4 @@
 #include <math.h>
-#include "calc.cpp"
 #include "utils.h"
 #include <stdio.h>
 #include <algorithm>
