@@ -1,0 +1,6 @@
+RGB to GrayScale image conversion, parallelizing using CUDA
+
+Simpler conversion is the average of the three color channels.
+
+Conversion -
+I = .299f * R + .587f * G + .114f * B
